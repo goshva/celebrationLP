@@ -10,7 +10,7 @@ var pageWordsetup = {
     BRAND: 'электрик кисловодск',
     TOWN: 'Кисловодск',
     PHONE: '8-928-346-84-68',
-	EMAIL: 'electrickmv@gmail.com'
+	EMAIL: 'electrickmv@gmail.com',
     CALLME: "Заказать звонок",
     ABOUT: "О нас",
     SERVICES: "Грантируем",
