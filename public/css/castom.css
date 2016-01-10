@@ -1,0 +1,35 @@
+section {    padding: 59px 0; !important}
+a { outline: none  !important; }
+.navbar {
+  background-color: rgba(255,255,255, 0.73)!important;
+}
+.navbar-brand {
+font-size: 15px !important;
+    max-width: 246px;
+    padding:7px !important;
+}
+ul.nav.navbar-nav.navbar-right a {        color: #F05F40;    } /*Nav bsr staic color */
+ul.nav.navbar-nav.navbar-right a:hover {        color: #F05F40;    } /*Nav bsr staic color */
+#phoneNumber{
+/*  padding: 11px;*/
+/*  margin: 3px; */
+  font-size: large;
+  color: #F05F40;
+  background-color: white;
+  border-radius: 21px !important;
+  box-shadow: 1px 1px 4px 0px #ccc !important;
+}
+#callMeplz {
+  color: #F05F40;
+  background-color: white;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 21px !important;
+  box-shadow: 1px 1px 4px 0px !important;
+}
+h1 {text-shadow: 0px 1px 3px #000}
+.slogan{
+  background-color: rgba(255, 255, 255, 0.73);
+  border-radius: 10px;
+  color: #000 !important;
+}

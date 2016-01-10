@@ -1,0 +1,237 @@
+extends ./layout.jade
+block meta
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+block css
+    // Bootstrap Core CSS
+    link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css')
+    // Custom Fonts
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&&subset=latin,cyrillic', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
+    // Plugin CSS
+    link(rel='stylesheet', href='css/animate.min.css', type='text/css')
+    // Custom CSS
+    link(rel='stylesheet', href='css/creative.css', type='text/css')
+    link(rel='stylesheet', href='css/castom.css', type='text/css')
+block navDescriptor
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            |                     
+            span.icon-bar
+            |                     
+            span.icon-bar
+            |                     
+            span.icon-bar
+          |                 
+          a.navbar-brand.page-scroll(href='#page-top')!=BRAND
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a#callMeplz.page-scroll(href='#page-top', data-toggle='modal', data-target='#exampleModal', data-whatever='callMe')!=PHONE 
+            li
+              a.page-scroll(href='#about')!=ABOUT
+            |                     
+            li
+              a.page-scroll(href='#services')!=SERVICES
+            |                     
+            li
+              a.page-scroll(href='#portfolio')!=PORTFOLIO
+            |                     
+            li
+              a.page-scroll(href='#contact')!=CONTACT
+        // /.navbar-collapse
+      // /.container-fluid
+block headerSubheader
+    header
+      .header-content
+        .header-content-inner
+          h1!=H1
+          |                 
+          hr
+          |                 
+          p.slogan!=SLOGAN
+          |                 
+          a.btn.btn-primary.btn-xl.page-scroll(href='#about')!=ACTION
+block boom     
+    section#about.bg-primary
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            h2.section-heading We&apos;ve got what you need!
+            |                     
+            hr.light
+            |                     
+            p.text-faded
+              | Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!
+            |                     
+            a.btn.btn-default.btn-xl(href='#') Get Started!
+block arguments     
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading!=WHYUS
+            |                     
+            hr.primary
+      |         
+      .container
+        .row
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-rub.wow.bounceIn.text-primary
+              h3!=AVAILABILITY
+              p.text-muted!=AVAILABILITYNOTE
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-map-marker.wow.bounceIn.text-primary(data-wow-delay='.1s')
+              h3!=CENTERTOWN
+              p.text-muted!=CENTERTOWNNOTE
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-key.wow.bounceIn.text-primary(data-wow-delay='.3s')
+              h3!=WITHLOVE
+              p.text-muted!=WITHLOVENOTE                 
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-paint-brush.wow.bounceIn.text-primary(data-wow-delay='.2s')
+              h3!=PROFMAKEUP
+              p.text-muted!=PROFMAKEUPNOTE
+block  beforeandafter   
+    section#portfolio.no-padding
+      .container-fluid
+        .row.no-gutter
+          .col-lg-12.text-center
+            h2.section-heading!=EXAMPLES
+            hr.primary
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/portfolio/1.jpg', alt='')
+              |                         
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTCATEGORY1
+                  .project-name!=PORTNAME1
+          |                 
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/portfolio/2.jpg', alt='')
+              |                         
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTCATEGORY2
+                  .project-name!=PORTNAME2
+          |                 
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/portfolio/3.jpg', alt='')
+              |                         
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTCATEGORY3
+                  .project-name!=PORTNAME3
+          |                 
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/portfolio/4.jpg', alt='')
+              |                         
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTCATEGORY4
+                  .project-name!=PORTNAME4
+          |                 
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/portfolio/5.jpg', alt='')
+              |                         
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTCATEGORY5
+                  .project-name!=PORTNAME5
+          |                 
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/portfolio/6.jpg', alt='')
+              |                         
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTCATEGORY6
+                  .project-name!=PORTNAME6
+block trust
+    aside.bg-dark
+      .container.text-center
+        .call-to-action
+          h2!=CALLTOACTION
+          |                 
+          a.btn.btn-default.btn-xl.wow.tada(type='button', data-toggle='modal', data-target='#exampleModal', data-whatever='signUp')!=SIGNUP
+
+block faq 
+    section#contact
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            h2.section-heading!=CONTACTUS
+            |                     
+            hr.primary
+            |                     
+            p
+              | Ready to start your next project with us? That&apos;s great! Give us a call or send us an email and we will get back to you as soon as possible!
+          |                 
+          .col-lg-4.col-lg-offset-2.text-center
+            i.fa.fa-phone.fa-3x.wow.bounceIn
+            |                     
+            p!=PHONE
+          |                 
+          .col-lg-4.text-center
+            i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
+            |                     
+            p
+              a(href='mailto:your-email@your-domain.com') feedback@startbootstrap.com
+
+block scripts
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    // jQuery
+    script(src='js/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='js/jquery.easing.min.js')
+    |     
+    script(src='js/jquery.fittext.js')
+    |     
+    script(src='js/wow.min.js')
+    // Custom Theme JavaScript
+    script(src='js/creative.js')
+
+block modalW
+    #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel')
+      .modal-dialog(role='document')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') &times;
+            h4#exampleModalLabel.modal-title New message
+          .modal-body
+            form
+              each val, index in {'productID':null, 'tel':'Телефон', 'email':'Электроная почта','client-lastname':'Фамилия','client-name':'Имя','client-secondname':'Очество','message-text':'Комментарий'}
+                .form-group.inputFields(class=index)
+                  label.control-label(for=index)=val +":"
+                  input(id=index).form-control(type=index, required=true)
+           .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal')!=CLOSE
+            button#SendForm.btn.btn-primary(type='button', data-dismiss='modal', disabled="disabled")!=SEND
+    script(src='js/modalMagic.js')
+block yaMap
+    script(src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5SsZpHVmtB6u-OK9N9a14PsAKcC5Dzzj&width=100%&height=527&lang=ru_RU&sourceType=constructor')
+block yaCounter
+    #map
+       script(src='js/YaCounter.js')
+block errors
