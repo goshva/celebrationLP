@@ -181,9 +181,7 @@ block faq
             |                     
             hr.primary
             |                     
-            p
-              | Ready to start your next project with us? That&apos;s great! Give us a call or send us an email and we will get back to you as soon as possible!
-          |                 
+            p!=CONTACTUSNOTE
           .col-lg-4.col-lg-offset-2.text-center
             i.fa.fa-phone.fa-3x.wow.bounceIn
             |                     
@@ -193,7 +191,7 @@ block faq
             i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
             |                     
             p
-              a(href='mailto:your-email@your-domain.com') feedback@startbootstrap.com
+              a(href='mailto:!=EMAIL')!=EMAIL
 
 block scripts
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
