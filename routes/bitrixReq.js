@@ -27,7 +27,7 @@ var postData = querystring.stringify(info);
  
 // request option
 var options = {
-  host: 'photo4.bitrix24.ru',
+  host: 'electrickmv.bitrix24.ru',
   port: 443,
   method: 'POST',
   path: '/crm/configs/import/lead.php',
