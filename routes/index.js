@@ -5,12 +5,24 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
 
 var Days = "3 дня";
+
+function formatDate(date) {
+var hours = date.getHours();
+var minutes = date.getMinutes();
+var ampm = hours >= 12 ? 'pm' : 'am';
+hours = hours % 12;hours = hours ? hours : 12; // the hour '0' should be '12'
+minutes = minutes < 10 ? '0'+minutes : minutes;var strTime = hours + ':' + minutes + ' ' + ampm;
+
+return date.getMonth()+1 + "/" + date.getDate() + "/" + date.getFullYear() }
+
+var now = new Date();
+var today = formatDate(now);
 var pageWordsetup = {
     TITLE: 'Электрик Кисловодск  - электромонтажные работы',
     BRAND: 'электрик кисловодск',
     TOWN: 'Кисловодск',
     PHONE: '8-928-346-84-68',
-	EMAIL: 'electrickmv@gmail.com',
+    EMAIL: 'electrickmv@gmail.com',
     CALLME: "Заказать звонок",
     ABOUT: "О нас",
     SERVICES: "Грантируем",
@@ -45,6 +57,10 @@ var pageWordsetup = {
     PORTNAME6: "Пожарная и Охранная система",    
     CALLTOACTION: "Оставте заявку на вызов мастера",
     SIGNUP: "Вызвать мастера <b style=\"text-decoration: underline;\">Беплатно</b>",
+    BOOM:"ДО "+today+" действует АКЦИЯ!",
+    BOOMNOTE:"Получить проект и подоборать проверенное орудование вы сможете в любое время. <br>НО лишь до лишь по акции выможите получить до 20% скидку на весь спктор работ.<br><b> Не упустите момент.</b><br> Вы ничего не теряете  - получив скидочный купон вы сможите его использовать в течении полу гоода ",
+    BOOMBUTTON:"Получить купон",
+    MODALHEADER:"Введите информацию о себе",
     SEND:"Отправить",
     CLOSE:"Закрыть"
 
