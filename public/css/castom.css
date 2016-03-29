@@ -1,3 +1,6 @@
+.modal-footer button {
+box-shadow: 1px 1px 4px 0px #ccc !important;
+}
 section {    padding: 59px 0; !important}
 a { outline: none  !important; }
 .navbar {
@@ -8,28 +11,34 @@ font-size: 15px !important;
     max-width: 246px;
     padding:7px !important;
 }
-ul.nav.navbar-nav.navbar-right a {        color: #F05F40;    } /*Nav bsr staic color */
-ul.nav.navbar-nav.navbar-right a:hover {        color: #F05F40;    } /*Nav bsr staic color */
+ul.nav.navbar-nav.navbar-right a {        color: #005359;    } /*Nav bsr staic color */
+ul.nav.navbar-nav.navbar-right a:hover {        color: #00B7CE;    } /*Nav bsr staic color */
 #phoneNumber{
 /*  padding: 11px;*/
 /*  margin: 3px; */
   font-size: large;
-  color: #F05F40;
+  color: #005359;
   background-color: white;
   border-radius: 21px !important;
   box-shadow: 1px 1px 4px 0px #ccc !important;
 }
 #callMeplz {
-  color: #F05F40;
+  color: #005359;
   background-color: white;
   padding: 8px;
   margin: 5px;
   border-radius: 21px !important;
   box-shadow: 1px 1px 4px 0px !important;
 }
-h1 {text-shadow: 0px 1px 3px #000}
+h1 {font-size:22px;
+	
+   text-shadow: 1px 2px 3px #000;
+ background-color:#00B7CE;
+border-radius: 10px;
+
+	}
 .slogan{
-  background-color: rgba(255, 255, 255, 0.73);
+  background-color: rgba(255, 255, 255, 0.93);
   border-radius: 10px;
   color: #000 !important;
 }

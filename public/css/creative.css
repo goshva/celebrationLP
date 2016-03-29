@@ -16,7 +16,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #f05f40;
+    border-color: #00B7CE;
     border-width: 3px;
 }
 
@@ -25,7 +25,7 @@ hr.light {
 }
 
 a {
-    color: #f05f40;
+    color: #00B7CE;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -52,12 +52,12 @@ p {
 }
 
 .bg-primary {
-    background-color: #f05f40;
+    background-color: #00B7CE;
 }
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #005359;
 }
 
 .text-faded {
@@ -89,12 +89,12 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
+    color: #00B7CE;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #00B7CE;
 }
 
 .navbar-default .nav > li>a,
@@ -107,12 +107,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+    color: #00B7CE;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
+    color: #00B7CE!important;
     background-color: transparent;
 }
 
@@ -128,12 +128,12 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: #00B7CE;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
+        color: #005359;
     }
 
     .navbar-default .nav > li>a,
@@ -153,12 +153,12 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #f05f40;
+        color: #00B7CE;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #005359;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -168,7 +168,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #f05f40;
+        color: #00B7CE;
     }
 }
 
@@ -235,7 +235,7 @@ header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
         max-width: 80%;
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -274,7 +274,7 @@ header .header-content .header-content-inner p {
     text-align: center;
     color: #fff;
     opacity: 0;
-    background: rgba(240,95,64,.9);
+    background: rgba(0, 183, 206, 0.84);
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -323,7 +323,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #f05f40;
+    color: #00B7CE;
 }
 
 .no-gutter > [class*=col-] {
@@ -385,12 +385,13 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: #f05f40;
+    border-color: #00B7CE;
     color: #fff;
-    background-color: #f05f40;
+    background-color: #00B7CE;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
+    box-shadow: 3px 3px 9px 1px !important;
 }
 
 .btn-primary:hover,
@@ -399,9 +400,10 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: #ed431f;
+    border-color: #00B7CD;
     color: #fff;
-    background-color: #ee4b28;
+    background-color: #00B7CE;
+    box-shadow: 3px 3px 9px 1px;
 }
 
 .btn-primary:active,
@@ -428,21 +430,22 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #f05f40;
-    background-color: #f05f40;
+    border-color: #00B7CE;
+    background-color: #00B7CE;
 }
 
 .btn-primary .badge {
-    color: #f05f40;
+    color: #00B7CE;
     background-color: #fff;
 }
 
 .btn {
     border: 0;
-    border-radius: 300px;
+    border-radius: 6px;
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
+	    box-shadow: 3px 3px 9px 1px;
 }
 
 .btn-xl {
