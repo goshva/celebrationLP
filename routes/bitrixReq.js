@@ -9,7 +9,7 @@ var querystring = require('querystring');
 
 var info = {
     LOGIN: 'car3g@ya.ru',
-    PASSWORD: 'mordor902',
+    PASSWORD: 'fuckIgnore',
     TITLE: 'Новая заявка',
     SOURCE_ID: 'WEB',
 }
