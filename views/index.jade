@@ -8,14 +8,16 @@ block meta
 block css
     // Bootstrap Core CSS
     link(rel='stylesheet', href='css/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/bootstrap/3.3.6/css/bootstrap.min.css.map', type='text/css')
     // Custom Fonts
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&&subset=latin,cyrillic', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css', type='text/css')
     // Plugin CSS
     link(rel='stylesheet', href='css/animate.min.css', type='text/css')
     // Custom CSS
     link(rel='stylesheet', href='css/creative.css', type='text/css')
     link(rel='stylesheet', href='css/castom.css', type='text/css')
+    //ICONS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', type='text/css')
 block navDescriptor
     nav#mainNav.navbar.navbar-default.navbar-fixed-top
       .container-fluid
@@ -30,7 +32,8 @@ block navDescriptor
             |                     
             span.icon-bar
           |                 
-          a.navbar-brand.page-scroll(href='#page-top')!=BRAND
+          a.navbar-brand.page-scroll(href='#page-top')
+            img(src='img/logo.png', alt='!=BRAND')
         // Collect the nav links, forms, and other content for toggling
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
@@ -54,56 +57,108 @@ block headerSubheader
       .header-content
         .header-content-inner
           h1!=H1
-          |                 
           hr
-          |                 
           p.slogan!=SLOGAN
-          |                 
-          a.btn.btn-primary.btn-xl.page-scroll(href='#about')!=ACTION
+          a.btn.btn-primary.btn-xl.page-scroll(href='#', data-toggle='modal', data-target='#exampleModal', data-whatever='callMe')!=CALLME
+block boomcall     
+    section#about.boom.bg-primary
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            p.text-faded!=BOOMNOTE1
+            a.btn.btn-default.btn-xl.wow.tada(type='button', data-toggle='modal', data-target='#exampleModal', data-whatever='callMe')!=SIGNUP0
+
+block boomcalculate     
+    section#phase.boom.bg-primary
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            p.text-faded!=BOOMNOTE2
+            a.btn.btn-default.btn-xl.wow.tada(type='button', data-toggle='modal', data-target='#exampleModal', data-whatever='callMe')!=SIGNUP1
 block boom     
     section#about.bg-primary
       .container
         .row
           .col-lg-8.col-lg-offset-2.text-center
             h2.section-heading!=BOOM
-            |                     
             hr.light
-            |                     
-            p.text-faded!=BOOMNOTE
+              
+            h3.text-faded!=BOOMNOTE3
             a.btn.btn-default.btn-xl.wow.tada(type='button', data-toggle='modal', data-target='#exampleModal', data-whatever='coupon')!=BOOMBUTTON
 block arguments     
-    section#services
+    section#about
       .container
         .row
           .col-lg-12.text-center
             h2.section-heading!=WHYUS
             |                     
             hr.primary
-      |         
+
       .container
         .row
           .col-lg-3.col-md-6.text-center
             .service-box
-              i.fa.fa-4x.fa-rub.wow.bounceIn.text-primary
-              h3!=AVAILABILITY
-              p.text-muted!=AVAILABILITYNOTE
-          .col-lg-3.col-md-6.text-center
+              i.fa.fa-fort-awesome.fa-4x.wow.bounceIn.text-primary
+              h3!=ADVANTAGES[0]
+              //p.text-muted!=NAMESADVANTAGES[0]
+          .col-lg-3.col-md-6.text-center.advantages
             .service-box
-              i.fa.fa-4x.fa-key.wow.bounceIn.text-primary(data-wow-delay='.3s')
-              h3!=WITHLOVE
-              p.text-muted!=WITHLOVENOTE                 
-          .col-lg-3.col-md-6.text-center
+              i.fa.fa-4x.fa-flag.wow.bounceIn.text-primary(data-wow-delay='.3s')
+              h3!=ADVANTAGES[1]
+              //p.text-muted!=NAMESADVANTAGES[1]                 
+          .col-lg-3.col-md-6.text-center.advantages
             .service-box
-              i.fa.fa-4x.fa-clock-o.wow.bounceIn.text-primary(data-wow-delay='.1s')
-              h3!=CENTERTOWN
-              p.text-muted!=CENTERTOWNNOTE
-          .col-lg-3.col-md-6.text-center
+              i.fa.fa-4x.fa-calendar.wow.bounceIn.text-primary(data-wow-delay='.1s')
+              h3!=ADVANTAGES[2]
+              //p.text-muted!=NAMESADVANTAGES[2]
+          .col-lg-3.col-md-6.text-center.advantages
             .service-box
-              i.fa.fa-4x.fa-graduation-cap.wow.bounceIn.text-primary(data-wow-delay='.2s')
-              h3!=PROFMAKEUP
-              p.text-muted!=PROFMAKEUPNOTE
-block  beforeandafter   
-    section#portfolio.no-padding
+              i.fa.fa-4x.fa-key.wow.bounceIn.text-primary(data-wow-delay='.2s')
+              h3!=ADVANTAGES[3]
+              //p.text-muted!=NAMESADVANTAGES[3]
+          .col-lg-3.col-md-6.text-center.advantages
+            .service-box
+              i.fa.fa-4x.fa-hospital-o.wow.bounceIn.text-primary
+              h3!=ADVANTAGES[4]
+              //p.text-muted!=NAMESADVANTAGES[4]
+          .col-lg-3.col-md-6.text-center.advantages
+            .service-box
+              i.fa.fa-4x.fa-paper-plane-o.wow.bounceIn.text-primary(data-wow-delay='.3s')
+              h3!=ADVANTAGES[5]
+              //p.text-muted!=NAMESADVANTAGES[5]
+          .col-lg-3.col-md-6.text-center.advantages
+            .service-box
+              i.fa.fa-4x.fa-star.wow.bounceIn.text-primary(data-wow-delay='.1s')
+              h3!=ADVANTAGES[6]
+              //p.text-muted!=NAMESADVANTAGES[6]
+          .col-lg-3.col-md-6.text-center.advantages
+            .service-box
+              i.fa.fa-4x.fa-child.wow.bounceIn.text-primary(data-wow-delay='.2s')
+              h3!=ADVANTAGES[7]
+              //p.text-muted!=NAMESADVANTAGES[7]
+block phase     
+    section
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading!=PHASESNOTE
+            |                     
+            hr.primary
+      |         
+      .container
+        .row
+         - var n = 0
+            while n < 8
+              - n++
+              .col-lg-3.col-md-6.text-center.phases
+                .service-box
+                  img(src='img/phase/'+n+'.png', alt='PHASENOTE[(n-1)')
+                  h3!=PHASES[(n-1)]
+                  p.text-muted!=PHASENOTE[(n-1)]
+
+         
+block portfolio   
+    section#portfolio
       .container-fluid
         .row.no-gutter
           .col-lg-12.text-center
@@ -111,7 +166,57 @@ block  beforeandafter
             hr.primary
           .col-lg-4.col-sm-6
             a.portfolio-box(href='#')
-              img.img-responsive(src='img/portfolio/1.jpg', alt='')
+              img.img-responsive(src='img/areas/1.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTAREA1
+                  .project-name!=PORTAREANAME1
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/areas/2.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTAREA2
+                  .project-name!=PORTAREANAME2
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/areas/3.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTAREA3
+                  .project-name!=PORTAREANAME3
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/areas/4.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTAREA4
+                  .project-name!=PORTAREANAME4
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/areas/5.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTAREA5
+                  .project-name!=PORTAREANAME5
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/areas/6.jpg', alt='')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded!=PORTAREA6
+                  .project-name!=PORTAREANAME6
+
+block portfolio2  
+    section#services
+      .container-fluid
+        .row.no-gutter
+          .col-lg-12.text-center
+            h2.section-heading!=SERVICES
+            hr.primary
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='#')
+              img.img-responsive(src='img/services/1.jpg', alt='')
               |                         
               .portfolio-box-caption
                 .portfolio-box-caption-content
@@ -120,7 +225,7 @@ block  beforeandafter
           |                 
           .col-lg-4.col-sm-6
             a.portfolio-box(href='#')
-              img.img-responsive(src='img/portfolio/2.jpg', alt='')
+              img.img-responsive(src='img/services/2.jpg', alt='')
               |                         
               .portfolio-box-caption
                 .portfolio-box-caption-content
@@ -129,7 +234,7 @@ block  beforeandafter
           |                 
           .col-lg-4.col-sm-6
             a.portfolio-box(href='#')
-              img.img-responsive(src='img/portfolio/3.jpg', alt='')
+              img.img-responsive(src='img/services/3.jpg', alt='')
               |                         
               .portfolio-box-caption
                 .portfolio-box-caption-content
@@ -138,7 +243,7 @@ block  beforeandafter
           |                 
           .col-lg-4.col-sm-6
             a.portfolio-box(href='#')
-              img.img-responsive(src='img/portfolio/4.jpg', alt='')
+              img.img-responsive(src='img/services/4.jpg', alt='')
               |                         
               .portfolio-box-caption
                 .portfolio-box-caption-content
@@ -147,7 +252,7 @@ block  beforeandafter
           |                 
           .col-lg-4.col-sm-6
             a.portfolio-box(href='#')
-              img.img-responsive(src='img/portfolio/5.jpg', alt='')
+              img.img-responsive(src='img/services/5.jpg', alt='')
               |                         
               .portfolio-box-caption
                 .portfolio-box-caption-content
@@ -156,19 +261,24 @@ block  beforeandafter
           |                 
           .col-lg-4.col-sm-6
             a.portfolio-box(href='#')
-              img.img-responsive(src='img/portfolio/6.jpg', alt='')
+              img.img-responsive(src='img/services/6.jpg', alt='')
               |                         
               .portfolio-box-caption
                 .portfolio-box-caption-content
                   .project-category.text-faded!=PORTCATEGORY6
                   .project-name!=PORTNAME6
+
+
+
 block trust
     aside.bg-dark
       .container.text-center
         .call-to-action
           h2!=CALLTOACTION
-          |                 
-          a.btn.btn-default.btn-xl.wow.tada(type='button', data-toggle='modal', data-target='#exampleModal', data-whatever='signUp')!=SIGNUP
+          p!=CALLTOACTIOTEXT
+                             
+          a.btn.btn-default.btn-xl.wow.tada(type='button', data-toggle='modal', data-target='#exampleModal', data-whatever='callMe')!=SIGNUP2
+
 
 block faq 
     section#contact
@@ -178,19 +288,18 @@ block faq
             h2.section-heading!=CONTACTUS
             |                     
             hr.primary
-            |                     
             p!=CONTACTUSNOTE
-          .col-lg-4.col-lg-offset-2.text-center
+          .col-lg-4.col-md-4.text-center
             i.fa.fa-phone.fa-3x.wow.bounceIn
-            |                     
             p!=PHONE
-          |                 
           .col-lg-4.text-center
             i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
-            |                     
             p
               a(href='mailto:!=EMAIL')!=EMAIL
-
+          .col-lg-4.text-center
+            i.fa.fa-3x.wow.bounceIn(data-wow-delay='.1s')="ЮНА"
+            p
+              a(href="http://juna-life.ru/" target="_blank")!=SITE
 block scripts
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
@@ -200,12 +309,11 @@ block scripts
     script(src='js/bootstrap.min.js')
     // Plugin JavaScript
     script(src='js/jquery.easing.min.js')
-    |     
     script(src='js/jquery.fittext.js')
-    |     
     script(src='js/wow.min.js')
     // Custom Theme JavaScript
     script(src='js/creative.js')
+    script(src='js/centerPhone.js')
 
 block modalW
     #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel')

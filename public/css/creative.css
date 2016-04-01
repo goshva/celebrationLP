@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 61px 0;
 }
 
 aside {
@@ -387,7 +387,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
     border-color: #00B7CE;
     color: #fff;
-    background-color: #00B7CE;
+    background-color: #EF135B;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
