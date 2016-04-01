@@ -8,8 +8,8 @@ var querystring = require('querystring');
  
 
 var info = {
-    LOGIN: 'sha.egor@gmail.com',
-    PASSWORD: 'test',
+    LOGIN: 'car3g@ya.ru',
+    PASSWORD: 'mordor902',
     TITLE: 'Новая заявка',
     SOURCE_ID: 'WEB',
 }
